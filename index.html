@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worapon Max | Data Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <!-- Sun Icon -->
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <!-- Moon Icon -->
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Worapon Max</h1>
+            <p class="subtitle">Data Analyst</p>
+            <p class="bio">Passionate about turning complex data into actionable insights. Specializing in Python, SQL, and data visualization.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Sales Performance Dashboard</h3>
+                    <p>Analyzed multi-year sales data to identify growth opportunities and seasonal trends.</p>
+                    <div class="tags">
+                        <span>Tableau</span>
+                        <span>SQL</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Built a machine learning model to predict customer churn with 85% accuracy.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Web Scraping & Sentiment Analysis</h3>
+                    <p>Automated data collection from social media to analyze brand sentiment.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>NLTK</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:email@example.com">Email</a>
+                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Worapon Max</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+        });
+    </script>
+</body>
+</html>
